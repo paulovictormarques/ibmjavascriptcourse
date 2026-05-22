@@ -40,3 +40,18 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let user = "unknown";
+let access;
+if (user === "Employee") {
+    access = "You can access Dietary Services";
+} else if (user === "Enrolled Member") {
+    access = "You can access DS and 1-1 interaction";
+ } else if (user === "Subscriber") {
+        access = "You have partial access"
+    }
+ else {
+    access = "You need to sign-up";
+}
+
+console.log("Popup message:", access)
